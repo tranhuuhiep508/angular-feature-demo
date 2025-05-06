@@ -1,0 +1,36 @@
+<div class="p-4">
+  <h2 class="text-2xl font-bold mb-4">Defer Demo</h2>
+
+  <!-- Defer block with placeholder -->
+  @defer (on interaction) {
+  <app-lazy-content-interact></app-lazy-content-interact>
+  } @placeholder {
+  <div class="bg-gray-100 p-4 rounded-lg animate-pulse">
+    <h3 class="text-xl font-semibold mb-2">Placeholder</h3>
+    <p>Content will load soon</p>
+    <div class="mt-4 h-[300px] w-[400px] bg-gray-200 rounded-lg"></div>
+  </div>
+  } @loading {
+  <div class="bg-blue-100 p-4 rounded-lg">
+    <h3 class="text-xl font-semibold mb-2">Loading...</h3>
+    <div
+      class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 mx-auto"
+    ></div>
+  </div>
+  } @error {
+  <div class="bg-red-100 p-4 rounded-lg">
+    <h3 class="text-xl font-semibold mb-2">Error</h3>
+    <p>Something went wrong while loading the content.</p>
+  </div>
+  }
+
+  <!-- Defer block with viewport trigger -->
+  @defer (on viewport) {
+  <app-lazy-content-viewport></app-lazy-content-viewport>
+  } @placeholder {
+  <div class="bg-gray-100 p-4 rounded-lg mt-8 h-[400px]">
+    <h3 class="text-xl font-semibold mb-2">Scroll down to load content</h3>
+    <div class="mt-4 h-[300px] w-[400px] bg-gray-200 rounded-lg"></div>
+  </div>
+  }
+</div>

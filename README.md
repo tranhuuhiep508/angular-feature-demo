@@ -1,59 +1,79 @@
-# AngularFeatureDemo
+# Angular Feature Demo
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
+This project demonstrates various new features in Angular 17+, including:
 
-## Development server
+## Features Demonstrated
 
-To start a local development server, run:
+### 1. Defer Demo
 
-```bash
-ng serve
-```
+- Demonstrates the new `@defer` directive for lazy loading content
+- Shows `@placeholder`, `@loading`, and `@error` blocks
+- Includes examples of timer-based and viewport-based loading
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### 2. Control Flow Demo
 
-## Code scaffolding
+- Showcases the new control flow syntax with `@if`, `@for`, and `@switch`
+- Demonstrates product listing with conditional rendering
+- Uses the new `track` feature for optimized rendering
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 3. Vite + esbuild Demo
 
-```bash
-ng generate component component-name
-```
+- Information about the new build system
+- Highlights the benefits of using Vite and esbuild
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 4. Standalone Demo
 
-```bash
-ng generate --help
-```
+- Demonstrates standalone components, directives, and pipes
+- Includes a custom price formatting pipe
+- Shows how to use standalone features in Angular 17+
 
-## Building
+### 5. SSR & Hydration Demo
 
-To build the project run:
+- Shows server-side rendering capabilities
+- Demonstrates client-side hydration
+- Includes interactive elements that work after hydration
 
-```bash
-ng build
-```
+### 6. Signals Demo
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- Demonstrates Angular's new Signals API
+- Shows `signal`, `computed`, and `effect` usage
+- Includes a reactive counter example
 
-## Running unit tests
+### 7. Route Redirect Demo
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- Shows function-based route redirects
+- Demonstrates authentication-based routing
+- Uses signals for auth state management
 
-```bash
-ng test
-```
+### 8. Fallback ng-content Demo
 
-## Running end-to-end tests
+- Demonstrates content projection with fallback content
+- Shows how to create reusable components with default content
 
-For end-to-end (e2e) testing, run:
+## Getting Started
 
-```bash
-ng e2e
-```
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   ng serve
+   ```
+4. Open your browser and navigate to `http://localhost:4200`
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Project Structure
 
-## Additional Resources
+- `src/app/components/`: Contains all demo components
+- `src/app/app.routes.ts`: Defines the application routes with lazy loading
+- `src/app/app.component.ts`: Main application component with navigation
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Technologies Used
+
+- Angular 17+
+- TypeScript
+- TailwindCSS
+- Vite + esbuild
+- Angular Router
+- Angular Signals
