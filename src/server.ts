@@ -44,7 +44,6 @@ app.use('/**', (req, res, next) => {
   angularApp
     .handle(req)
     .then((response) => {
-      console.log('response', response);
       return response ? writeResponseToNodeResponse(response, res) : next();
     })
     .catch(next);
